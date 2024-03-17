@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="main-box">
+        
+                    <div class="weather-app" id="weather-app">
+                        
+                            <div class="container" >
+                                <h3 class="brand"> The Weather </h3>
+                                <div>
+                                    <h1 class="temp">
+                                        25&#176;C
+                                    </h1>
+                                    <div class="city-time">
+                                        <h1 class="name">
+                                            Faisalabad
+                                        </h1>
+                                        <small>
+                                            <span class="time">
+                                                12 : 53
+                                            </span>
+                                            -
+                                            <span class="date">
+                                                Saturday, Mar 16, 2024
+                                            </span>
+                                        </small>
+                                    </div>
+                                    <div class="weather">
+                                        <span class="condition">
+                                            Clouds
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <form action="/search" id="locationinput" method="POST">
+                                    <input type="text" id="search" class="search" name="city"
+                                        placeholder="Search Location...">
+                                    <button type="submit" class="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </form>
+
+
+                                <ul class="details">
+                                    <h4>Weather Details</h4>
+                                    <li>
+                                        <span>Temperature</span>
+                                        <span class="temp123">
+                                            25.63&#176;C
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Feels Like</span>
+                                        <span class="feelLike">
+                                            24.69&#176;C
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Temp_Min</span>
+                                        <span class="Min">
+                                            25.63&#176;C
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Temp_Max</span>
+                                        <span class="Max">
+                                            25.63&#176;C
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Pressure</span>
+                                        <span class="pressure">
+                                            1014 m/s
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Humidity</span>
+                                        <span class="humidity">
+                                            17%
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>Visibility</span>
+                                        <span class="Visibility">
+                                            10000 m
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+            </div>
+</body>
+
+</html>
